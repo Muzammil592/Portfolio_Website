@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@assets/Gemini_Generated_Image_opw2jyopw2jyopw2_1771072476365.png";
+import profileImage from "@assets/image_2_1771072611398.png";
 
 export function HeroSection() {
   const scrollTo = (href: string) => {
