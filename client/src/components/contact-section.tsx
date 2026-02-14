@@ -97,6 +97,7 @@ export function ContactSection() {
                   {[
                     { label: "Specialization", value: "Full-Stack (MERN) & AI/ML" },
                     { label: "Education", value: "BS CS @ UET Lahore" },
+
                     { label: "Experience", value: "Frontend Intern + Freelance" },
                     { label: "Availability", value: "Open to opportunities" },
                   ].map((item) => (

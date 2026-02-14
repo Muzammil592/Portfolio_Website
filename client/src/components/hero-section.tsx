@@ -55,7 +55,7 @@ export function HeroSection() {
             className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-2xl mb-3 leading-relaxed"
             data-testid="text-hero-subheadline"
           >
-            Full-Stack Engineer | BS Computer Science @ UET Lahore (CGPA 3.51).
+            Full-Stack Engineer | BS Computer Science @ UET Lahore.
             From mastering the MERN stack to engineering real-time Computer Vision solutions.
           </motion.p>
 
@@ -124,17 +124,12 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-16 grid grid-cols-2 gap-6 max-w-xs"
+            className="mt-16"
           >
-            {[
-              { value: "3.51", label: "CGPA" },
-              { value: "2+", label: "Years Exp" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center" data-testid={`stat-${stat.label.toLowerCase().replace(/\s/g, "-")}`}>
-                <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{stat.value}</div>
-                <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">{stat.label}</div>
-              </div>
-            ))}
+            <div className="text-center inline-block" data-testid="stat-years-exp">
+              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">2+</div>
+              <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Years Exp</div>
+            </div>
           </motion.div>
         </div>
 
