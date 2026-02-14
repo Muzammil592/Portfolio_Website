@@ -124,11 +124,10 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-16 grid grid-cols-3 gap-6 max-w-md"
+            className="mt-16 grid grid-cols-2 gap-6 max-w-xs"
           >
             {[
               { value: "3.51", label: "CGPA" },
-              { value: "5+", label: "Projects" },
               { value: "2+", label: "Years Exp" },
             ].map((stat) => (
               <div key={stat.label} className="text-center" data-testid={`stat-${stat.label.toLowerCase().replace(/\s/g, "-")}`}>
