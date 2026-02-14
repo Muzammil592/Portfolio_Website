@@ -137,7 +137,7 @@ export function HeroSection() {
               <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Years Exp</div>
             </div>
             <div className="text-center" data-testid="stat-repos">
-              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{githubData?.public_repos ?? "18"}+</div>
+              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">15+</div>
               <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Repositories</div>
             </div>
           </motion.div>
