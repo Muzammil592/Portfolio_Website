@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@assets/image_1771072072741.png";
+import profileImage from "@assets/Gemini_Generated_Image_opw2jyopw2jyopw2_1771072476365.png";
 
 export function HeroSection() {
   const scrollTo = (href: string) => {
@@ -152,8 +152,7 @@ export function HeroSection() {
               <img
                 src={profileImage}
                 alt="Muzammil Abbas"
-                className="object-cover"
-                style={{ objectPosition: "45% 15%", width: "130%", height: "130%", marginLeft: "-15%", marginTop: "-5%" }}
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-primary border-4 border-background" />
