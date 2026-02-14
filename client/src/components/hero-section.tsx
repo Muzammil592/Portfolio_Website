@@ -152,7 +152,8 @@ export function HeroSection() {
               <img
                 src={profileImage}
                 alt="Muzammil Abbas"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: "50% 20%" }}
               />
             </div>
             <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-primary border-4 border-background" />
