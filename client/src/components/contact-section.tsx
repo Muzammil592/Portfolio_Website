@@ -125,11 +125,8 @@ export function ContactSection() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="font-mono text-sm font-bold">
-              <span className="text-primary">MA</span>
-              <span className="text-muted-foreground">.</span>
-            </span>
-            <span className="text-xs text-muted-foreground">
-              Muzammil Abbas
+              <span className="text-primary">Muzammil</span>
+              <span className="text-muted-foreground"> Abbas</span>
             </span>
           </div>
 

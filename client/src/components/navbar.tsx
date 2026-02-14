@@ -43,8 +43,8 @@ export function Navbar() {
             className="font-mono text-lg font-bold tracking-tight"
             data-testid="link-logo"
           >
-            <span className="text-primary">MA</span>
-            <span className="text-muted-foreground">.</span>
+            <span className="text-primary">Muzammil</span>
+            <span className="text-muted-foreground"> Abbas</span>
           </button>
 
           <div className="hidden md:flex items-center gap-1">
