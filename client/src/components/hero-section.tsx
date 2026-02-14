@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
 import profileImage from "@assets/image_2_1771072611398.png";
 
 export function HeroSection() {
+  const { data: githubData } = useQuery<{ public_repos: number; followers: number }>({
+    queryKey: ["/api/github/profile"],
+    staleTime: 10 * 60 * 1000,
+  });
+
   const scrollTo = (href: string) => {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -124,11 +130,19 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-16"
+            className="mt-16 grid grid-cols-3 gap-8 max-w-sm"
           >
-            <div className="text-center inline-block" data-testid="stat-years-exp">
+            <div className="text-center" data-testid="stat-years-exp">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">2+</div>
               <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Years Exp</div>
+            </div>
+            <div className="text-center" data-testid="stat-repos">
+              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{githubData?.public_repos ?? "18"}+</div>
+              <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Repositories</div>
+            </div>
+            <div className="text-center" data-testid="stat-followers">
+              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{githubData?.followers ?? "60"}+</div>
+              <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Followers</div>
             </div>
           </motion.div>
         </div>
