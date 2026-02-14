@@ -58,13 +58,6 @@ export function Navbar() {
                 {link.label}
               </button>
             ))}
-            <Button
-              size="sm"
-              onClick={() => scrollTo("#contact")}
-              data-testid="button-hire-me"
-            >
-              Hire Me
-            </Button>
           </div>
 
           <Button

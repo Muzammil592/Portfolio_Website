@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import profileImage from "@assets/image_1771072072741.png";
 
 export function HeroSection() {
   const scrollTo = (href: string) => {
@@ -23,7 +24,8 @@ export function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-4xl">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="max-w-4xl lg:flex-1">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -135,6 +137,27 @@ export function HeroSection() {
               </div>
             ))}
           </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+          className="shrink-0 order-first lg:order-last"
+          data-testid="img-profile"
+        >
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-primary/10 to-transparent blur-xl" />
+            <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/20">
+              <img
+                src={profileImage}
+                alt="Muzammil Abbas"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-primary border-4 border-background" />
+          </div>
+        </motion.div>
         </div>
       </div>
 
