@@ -24,8 +24,8 @@ export function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-        <div className="max-w-4xl lg:flex-1">
+        <div className="flex flex-row items-center gap-8 sm:gap-12 lg:gap-16">
+        <div className="flex-1 min-w-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -143,10 +143,10 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="shrink-0 order-first lg:order-last"
+          className="shrink-0 hidden sm:block"
           data-testid="img-profile"
         >
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80">
+          <div className="relative w-52 h-52 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/30 via-primary/10 to-transparent blur-xl" />
             <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-primary/20">
               <img
