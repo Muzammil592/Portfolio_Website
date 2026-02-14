@@ -130,7 +130,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
-            className="mt-16 grid grid-cols-3 gap-8 max-w-sm"
+            className="mt-16 grid grid-cols-2 gap-8 max-w-xs"
           >
             <div className="text-center" data-testid="stat-years-exp">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">2+</div>
@@ -139,10 +139,6 @@ export function HeroSection() {
             <div className="text-center" data-testid="stat-repos">
               <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{githubData?.public_repos ?? "18"}+</div>
               <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Repositories</div>
-            </div>
-            <div className="text-center" data-testid="stat-followers">
-              <div className="font-mono text-2xl sm:text-3xl font-bold text-primary">{githubData?.followers ?? "60"}+</div>
-              <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Followers</div>
             </div>
           </motion.div>
         </div>
