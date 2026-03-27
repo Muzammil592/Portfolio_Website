@@ -160,7 +160,7 @@ export function HeroSection() {
                 <div className="text-xs text-muted-foreground mt-1.5 uppercase tracking-wider font-mono">Repositories</div>
               </div>
               <div className="px-5 py-4 rounded-xl border border-border/60 bg-card/60 backdrop-blur-sm text-center min-w-[90px]">
-                <div className="font-mono text-2xl sm:text-3xl font-bold text-primary leading-none">3+</div>
+                <div className="font-mono text-2xl sm:text-3xl font-bold text-primary leading-none">5+</div>
                 <div className="text-xs text-muted-foreground mt-1.5 uppercase tracking-wider font-mono">Projects</div>
               </div>
             </motion.div>

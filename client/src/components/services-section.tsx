@@ -87,7 +87,7 @@ export function ServicesSection() {
             Available for freelance projects on Fiverr. Let's discuss your requirements and build something impactful.
           </p>
           <a
-            href="https://www.fiverr.com"
+            href="https://www.fiverr.com/s/m5L1Vw9"
             target="_blank"
             rel="noopener noreferrer"
             data-testid="link-fiverr"
