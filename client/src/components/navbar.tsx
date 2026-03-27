@@ -69,7 +69,7 @@ export function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => scrollTo(link.href)}
-                  className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-white/5"
+                  className="px-3 py-2 text-sm text-muted-foreground hover:text-primary transition-colors rounded-md hover:bg-primary/8"
                   data-testid={`link-nav-${link.label.toLowerCase().replace(/\s/g, "-")}`}
                 >
                   {link.label}
