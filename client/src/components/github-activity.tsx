@@ -35,7 +35,7 @@ const langColors: Record<string, string> = {
 export function GithubActivity() {
   const { data, isLoading, isError } = useQuery<GithubProfile>({
     queryKey: ["/api/github/profile"],
-    staleTime: 10 * 60 * 1000,
+    staleTime: 2 * 60 * 1000, // Reduced to 2 minutes for fresher data
   });
 
   if (isError) return null;

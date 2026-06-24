@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
-import profileImage from "@assets/image_2_1771072611398.png";
+import profileImage from "@assets/new profile.jpeg";
 
 export function HeroSection() {
   const { data: githubData } = useQuery<{ public_repos: number; followers: number }>({
@@ -156,7 +156,7 @@ export function HeroSection() {
                 className="px-5 py-4 rounded-xl border border-border/60 bg-card/60 backdrop-blur-sm text-center min-w-[90px]"
                 data-testid="stat-repos"
               >
-                <div className="font-mono text-2xl sm:text-3xl font-bold text-primary leading-none">15+</div>
+                <div className="font-mono text-2xl sm:text-3xl font-bold text-primary leading-none">25+</div>
                 <div className="text-xs text-muted-foreground mt-1.5 uppercase tracking-wider font-mono">Repositories</div>
               </div>
               <div className="px-5 py-4 rounded-xl border border-border/60 bg-card/60 backdrop-blur-sm text-center min-w-[90px]">

@@ -4,7 +4,7 @@ import { storage } from "./storage";
 
 let cachedGithubData: any = null;
 let cacheTimestamp = 0;
-const CACHE_DURATION = 10 * 60 * 1000;
+const CACHE_DURATION = 2 * 60 * 1000; // Reduced to 2 minutes for fresher data
 
 export async function registerRoutes(
   httpServer: Server,
@@ -19,7 +19,7 @@ export async function registerRoutes(
 
       const [profileRes, reposRes] = await Promise.all([
         fetch("https://api.github.com/users/Muzammil592"),
-        fetch("https://api.github.com/users/Muzammil592/repos?sort=updated&per_page=6"),
+        fetch("https://api.github.com/users/Muzammil592/repos?sort=pushed&per_page=6&order=desc"),
       ]);
 
       if (!profileRes.ok || !reposRes.ok) {
