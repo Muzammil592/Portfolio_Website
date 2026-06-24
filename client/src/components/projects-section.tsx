@@ -1,7 +1,7 @@
 import { SectionWrapper, SectionHeader } from "@/components/section-wrapper";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Shield, MessageSquare, Stethoscope, Code2, Cpu, Terminal, BookOpen, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Github, Shield, Brain, Stethoscope, Code2, Cpu, Terminal, BookOpen, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubActivity } from "@/components/github-activity";
 
@@ -29,13 +29,13 @@ const flagshipProjects = [
     borderGlow: "hover:shadow-[0_0_0_1px_hsl(210_95%_60%/0.2),0_12px_40px_hsl(210_95%_60%/0.08)]",
   },
   {
-    id: "chatly",
-    title: "Chatly Messenger",
-    badge: "Real-Time",
-    icon: MessageSquare,
-    tech: ["React.js", "Node.js", "Socket.IO"],
+    id: "efficient-net-classifier",
+    title: "EfficientNet Custom Gender Classifier",
+    badge: "Deep Learning",
+    icon: Brain,
+    tech: ["Python", "EfficientNet", "TensorFlow", "CNN", "Computer Vision"],
     impact:
-      "Real-time two-way messaging application with instant delivery, online presence indicators, and a scalable backend connection handling architecture.",
+      "Advanced deep learning model for gender classification using fine-tuned EfficientNet architecture. Achieves high accuracy through transfer learning and optimized neural network training.",
     accentColor: "from-chart-3/20 via-chart-3/8 to-transparent",
     borderGlow: "hover:shadow-[0_0_0_1px_hsl(180_90%_50%/0.2),0_12px_40px_hsl(180_90%_50%/0.08)]",
   },
@@ -50,11 +50,11 @@ const githubRepos = [
     lang: "C++",
   },
   {
-    id: "assembly-lang",
-    title: "Assembly Language Project",
-    description: "Low-level systems programming showcasing deep hardware understanding.",
-    icon: Cpu,
-    lang: "Assembly",
+    id: "mern-stack",
+    title: "MERN Stack Projects",
+    description: "Full-stack web applications built with MongoDB, Express, React, and Node.js.",
+    icon: Code2,
+    lang: "JavaScript/TypeScript",
   },
   {
     id: "automation-scripts",
@@ -64,11 +64,11 @@ const githubRepos = [
     lang: "Python",
   },
   {
-    id: "academic-labs",
-    title: "Academic Labs",
-    description: "Various projects in C#, .NET Core, and SQL for coursework and research.",
-    icon: BookOpen,
-    lang: "C# / SQL",
+    id: "ai-ml-models",
+    title: "AI/ML Models & Integration",
+    description: "Trained deep learning models and seamlessly integrated them into production websites and applications.",
+    icon: Brain,
+    lang: "Python / TensorFlow",
   },
 ];
 
